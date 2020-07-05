@@ -1,0 +1,27 @@
+01:33:11.344 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase1 - entering as admin
+01:49:30.191 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase1 - entering as admin
+01:58:03.973 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase1 - entering as admin
+01:58:05.418 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase1 - closing the browser
+02:27:29.663 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase6 - select the departure time
+02:38:19.894 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase1 - entering as admin
+02:38:21.571 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase1 - closing the browser
+02:38:30.105 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase2 - entering the flight
+02:38:40.606 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase3 - select the route
+02:38:52.278 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase4 - flll the distance
+02:39:03.187 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase5 - select the departure date
+02:39:14.888 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase6 - select the departure time
+02:39:26.858 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase7 - select the arrival date
+02:39:38.934 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase8 - select the arrival time
+02:39:51.404 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase9 - fill the business seat amount
+02:40:03.797 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase10 - checking add button
+02:44:39.413 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase1 - entering as admin
+02:44:41.251 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase1 - closing the browser
+02:44:50.053 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase2 - entering the flight
+02:45:00.900 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase3 - select the route
+02:45:11.673 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase4 - flll the distance
+02:45:22.777 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase5 - select the departure date
+02:45:34.193 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase6 - select the departure time
+02:45:45.118 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase7 - select the arrival date
+02:45:56.991 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase8 - select the arrival time
+02:46:09.550 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase9 - fill the business seat amount
+02:46:21.973 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase10 - checking add button

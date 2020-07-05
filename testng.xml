@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="happytrip">
+<listeners>
+	<listener class-name="com.skillassure.happytrip.ExtentReportListener.ExtentReporterNG" />
+</listeners>
+
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.skillassure.happytrip.tests.ScheduleFlightTestCase1"/>
+      <class name="com.skillassure.happytrip.tests.ScheduleFlightTestCase2"/>
+      <class name="com.skillassure.happytrip.tests.ScheduleFlightTestCase3"/>
+      <class name="com.skillassure.happytrip.tests.ScheduleFlightTestCase4"/>
+      <class name="com.skillassure.happytrip.tests.ScheduleFlightTestCase5"/>
+      <class name="com.skillassure.happytrip.tests.ScheduleFlightTestCase6"/>
+      <class name="com.skillassure.happytrip.tests.ScheduleFlightTestCase7"/>
+      <class name="com.skillassure.happytrip.tests.ScheduleFlightTestCase8"/>
+      <class name="com.skillassure.happytrip.tests.ScheduleFlightTestCase9"/>
+      <class name="com.skillassure.happytrip.tests.ScheduleFlightTestCase10"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
