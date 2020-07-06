@@ -31,6 +31,7 @@ public class ScheduleFlightTestCase1 extends TestBase {
 	
 	@BeforeMethod
 	public void setup() {
+		Log.info("initializing the method");
 		initialization();
 		filldetails = new FillScheduleFlightDetails();
 		

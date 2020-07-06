@@ -2,6 +2,7 @@ package com.skillassure.happytrip.tests;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -22,6 +23,7 @@ public class ScheduleFlightTestCase10 extends TestBase{
 	
 	@BeforeMethod
 	public void setup() {
+		Log.info("initializing the method");
 		initialization();
 		filldetail = new FillScheduleFlightDetails();
 		
@@ -39,6 +41,7 @@ public class ScheduleFlightTestCase10 extends TestBase{
 	public void Validatesignupbutton(String username, String password,String flight, String route, String distance, String depaturedate,String depaturetime,String arrivaldate, String arrivaltime, String business, String economy){
 		Log.info("checking add button");
 		filldetail.fillscheduledata(username, password, flight, route, distance, depaturedate, depaturetime, arrivaldate, arrivaltime, business, economy);
+		
 	}
 	
 	@AfterMethod
