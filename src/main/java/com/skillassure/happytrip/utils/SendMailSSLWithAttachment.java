@@ -57,10 +57,10 @@ public class SendMailSSLWithAttachment {
 			Message message = new MimeMessage(session);
  
 			// Set the from address
-			message.setFrom(new InternetAddress("mukeshotwani.50@gmail.com"));
+			message.setFrom(new InternetAddress("abc@gmail.com"));
  
 			// Set the recipient address
-			message.setRecipients(Message.RecipientType.TO,InternetAddress.parse("mukesh.otwani50@gmail.com"));
+			message.setRecipients(Message.RecipientType.TO,InternetAddress.parse("pranshul@gmail.com"));
             
                         // Add the subject link
 			message.setSubject("Testing Subject");
