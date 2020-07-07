@@ -13,13 +13,6 @@
           <include name="Validatesignupbutton" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.skillassure.happytrip.tests.ScheduleFlightTestCase10 -->
-      <class name="com.skillassure.happytrip.tests.ScheduleFlightTestCase5">
-        <methods>
-          <include name="setup"/>
-          <include name="ValidatedepartureDate" invocation-numbers="0"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.skillassure.happytrip.tests.ScheduleFlightTestCase5 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
