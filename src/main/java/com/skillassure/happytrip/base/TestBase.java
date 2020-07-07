@@ -22,18 +22,7 @@ public class TestBase {
 	public  static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
 	
-	public TestBase(){
-//		try {
-//			prop = new Properties();
-//			FileInputStream ip = new FileInputStream(System.getProperty("C:\\Users\\prans\\eclipse-workspace\\happytrip\\src\\main\\java\\com\\skillassure\\happytrip\\config\\config.properties"));
-//			prop.load(ip);
-//		} catch (FileNotFoundException e) {
-//			e.printStackTrace();
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
-	}
-//	
+
 	
 	public void initialization(){
 		

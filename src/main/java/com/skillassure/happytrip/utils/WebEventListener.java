@@ -2,6 +2,7 @@ package com.skillassure.happytrip.utils;
 
 import java.io.IOException;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
@@ -51,13 +52,15 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 		System.out.println("Navigated forward to next page");
 	}
 
-	public void onException1(Throwable error, WebDriver driver) {
+	public void onException(Throwable error, WebDriver driver) {
 		System.out.println("Exception occured: " + error);
 		try {
+			
 			TestUtil.takeScreenshotAtEndOfTest();
+			
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
+		} 
 	}
 
 	public void beforeFindBy(By by, WebElement element, WebDriver driver) {
@@ -128,7 +131,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 		
 	}
 
-	public void onException(Throwable throwable, WebDriver driver) {
+	public void onException1(Throwable throwable, WebDriver driver) {
 		// TODO Auto-generated method stub
 		
 	}

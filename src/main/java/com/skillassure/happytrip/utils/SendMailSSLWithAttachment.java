@@ -18,97 +18,52 @@ import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
 public class SendMailSSLWithAttachment {
-	public static void main(String[] args) {
-		 
-		// Create object of Property file
-		Properties props = new Properties();
- 
-		// this will set host of server- you can change based on your requirement 
-		props.put("mail.smtp.host", "smtp.gmail.com");
- 
-		// set the port of socket factory 
-		props.put("mail.smtp.socketFactory.port", "465");
- 
-		// set socket factory
-		props.put("mail.smtp.socketFactory.class","javax.net.ssl.SSLSocketFactory");
- 
-		// set the authentication to true
-		props.put("mail.smtp.auth", "true");
- 
-		// set the port of SMTP server
-		props.put("mail.smtp.port", "465");
- 
-		// This will handle the complete authentication
-		Session session = Session.getDefaultInstance(props,
- 
-				new javax.mail.Authenticator() {
- 
-					protected PasswordAuthentication getPasswordAuthentication() {
- 
-					return new PasswordAuthentication("", "add your password");
- 
-					}
- 
-				});
- 
-		try {
- 
-			// Create object of MimeMessage class
-			Message message = new MimeMessage(session);
- 
-			// Set the from address
-			message.setFrom(new InternetAddress("abc@gmail.com"));
- 
-			// Set the recipient address
-			message.setRecipients(Message.RecipientType.TO,InternetAddress.parse("pranshul@gmail.com"));
-            
-                        // Add the subject link
-			message.setSubject("Testing Subject");
- 
-			// Create object to add multimedia type content
-			BodyPart messageBodyPart1 = new MimeBodyPart();
- 
-			// Set the body of email
-			messageBodyPart1.setText("This is message body");
- 
-			// Create another object to add another content
-			MimeBodyPart messageBodyPart2 = new MimeBodyPart();
- 
-			// Mention the file which you want to send
-			String filename = "G:\\a.xlsx";
- 
-			// Create data source and pass the filename
-			DataSource source = new FileDataSource(filename);
- 
-			// set the handler
-			messageBodyPart2.setDataHandler(new DataHandler(source));
- 
-			// set the file
-			messageBodyPart2.setFileName(filename);
- 
-			// Create object of MimeMultipart class
-			Multipart multipart = new MimeMultipart();
- 
-			// add body part 1
-			multipart.addBodyPart(messageBodyPart2);
- 
-			// add body part 2
-			multipart.addBodyPart(messageBodyPart1);
- 
-			// set the content
-			message.setContent(multipart);
- 
-			// finally send the email
-			Transport.send(message);
- 
-			System.out.println("=====Email Sent=====");
- 
-		} catch (MessagingException e) {
- 
-			throw new RuntimeException(e);
- 
+	public static void fail() throws MessagingException {
+		//Recipient's Mail id
+		System.out.println("mail   klsjcfskcslkcm");
+		String receipientTo = "guptapranshul05@gmail.com";
+		//Sender's Mail id
+		String senderFrom = "guptapranshul05@gmail.com";
+		//Path of PDF test report
+		String path = "C:\\Users\\prans\\eclipse-workspace\\happytrip\\report\\Extent.html";
+		//Getting System properties
+		Properties prop = System.getProperties();
+		//Setting up smtp host
+		prop.setProperty("mail.smtp.host", "smtp.gmail.com");
+		//Creating a new session for smtp
+		Session session = Session.getDefaultInstance(prop);
+		MimeMessage msg = new MimeMessage(session);
+		//Instance of From Internet address
+		InternetAddress frmAddress = new InternetAddress(senderFrom);
+		//Instance of To Internet address
+		InternetAddress toAddress = new InternetAddress(receipientTo);
+		//Setting up sender's address
+		msg.setFrom(frmAddress);
+		//Setting up recipient's address
+		msg.addRecipient(Message.RecipientType.TO, toAddress);
+		//Setting email's subject
+		msg.setSubject("Test Status Report");
+		BodyPart msgBody = new MimeBodyPart();
+		//Setting email's message body
+		msgBody.setText("This is test report through mail");
+		//Instance of second part
+		Multipart multiPart = new MimeMultipart();
+		multiPart.addBodyPart(msgBody);
+		//Another mail body
+		msgBody = new MimeBodyPart();
+		//Path to pdf file for attachment
+		DataSource source = new FileDataSource(path);
+		DataHandler dataHandler = new DataHandler(source);
+		msgBody.setDataHandler(dataHandler);
+		msgBody.setFileName(path);
+		multiPart.addBodyPart(msgBody);
+		msg.setContent(multiPart);
+		//Authentication and connection establishment to the sender's mail
+		Transport transport = session.getTransport("smtps");
+		transport.connect("smtp.gmail.com",465,"guptapranshul05@gmail.com","pass");
+		transport.sendMessage(msg, msg.getAllRecipients());
+		transport.close();
+		System.out.println("Mail Sent");
 		}
- 
-	}
-
-}
+		 
+		}

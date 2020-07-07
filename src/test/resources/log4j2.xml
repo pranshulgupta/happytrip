@@ -7,7 +7,7 @@
 </Properties>
 	<Appenders>
 
-	<File name="FileAppender" fileName="LOGGERS.log" immediateFlush="true" append="true" >
+	<File name="FileAppender" fileName="./logs/LOGGERS.log" immediateFlush="true" append="true" >
         <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
     </File>
 		<Console name="Console" target="SYSTEM_OUT">
