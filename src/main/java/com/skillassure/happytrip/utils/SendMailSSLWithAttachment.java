@@ -17,10 +17,15 @@ import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+
 public class SendMailSSLWithAttachment {
+	private static Logger Log = LogManager.getLogger(SendMailSSLWithAttachment.class);
 	public static void fail() throws MessagingException {
 		//Recipient's Mail id
-		System.out.println("mail   klsjcfskcslkcm");
+		
 		String receipientTo = "guptapranshul05@gmail.com";
 		//Sender's Mail id
 		String senderFrom = "guptapranshul05@gmail.com";
@@ -63,6 +68,7 @@ public class SendMailSSLWithAttachment {
 		transport.connect("smtp.gmail.com",465,"guptapranshul05@gmail.com","pass");
 		transport.sendMessage(msg, msg.getAllRecipients());
 		transport.close();
+		Log.info("mail sent");
 		System.out.println("Mail Sent");
 		}
 		 

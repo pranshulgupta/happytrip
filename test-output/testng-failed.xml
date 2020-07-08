@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [happytrip]">
   <listeners>
     <listener class-name="com.skillassure.happytrip.ExtentReportListener.ExtentReporterNG"/>
   </listeners>
@@ -15,4 +15,4 @@
       </class> <!-- com.skillassure.happytrip.tests.ScheduleFlightTestCase10 -->
     </classes>
   </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+</suite> <!-- Failed suite [happytrip] -->
