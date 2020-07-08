@@ -288,3 +288,24 @@
 23:57:16.441 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase9 - fill the business seat amount
 23:57:21.532 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase10 - initializing the method
 23:57:28.526 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase10 - checking add button
+16:20:20.263 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase1 - initializing the method
+16:20:30.275 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase1 - entering as admin
+16:20:31.998 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase1 - closing the browser
+16:20:32.978 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase2 - initializing the method
+16:20:40.120 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase2 - entering the flight
+16:20:43.468 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase3 - initializing the method
+16:20:50.730 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase3 - select the route
+16:20:54.564 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase4 - initializing the method
+16:21:01.647 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase4 - flll the distance
+16:21:05.675 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase5 - initializing the method
+16:21:12.892 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase5 - select the departure date
+16:21:16.411 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase6 - initializing the method
+16:21:25.017 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase6 - select the departure time
+16:21:30.134 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase7 - initializing the method
+16:21:36.866 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase7 - select the arrival date
+16:21:41.460 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase8 - initializing the method
+16:21:48.618 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase8 - select the arrival time
+16:21:53.311 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase9 - initializing the method
+16:22:00.271 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase9 - fill the business seat amount
+16:22:05.240 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase10 - initializing the method
+16:22:11.914 [main] INFO  com.skillassure.happytrip.tests.ScheduleFlightTestCase10 - checking add button
